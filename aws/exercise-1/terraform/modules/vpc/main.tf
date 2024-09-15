@@ -14,7 +14,7 @@ resource "aws_internet_gateway" "create_igw" {
     }
 }   
 
-resource "aws_subnet" "create_public_sub" {
+resource "aws_subnet" "create_public_subnet" {
     count = "${length(var.pub_sub_cidr)}"
     vpc_id = aws_vpc.create_vpc.id
     availability_zone = var.sub_az[count.index]
@@ -25,7 +25,7 @@ resource "aws_subnet" "create_public_sub" {
     }
 }
 
-resource "aws_subnet" "create_priv_subnet" {
+resource "aws_subnet" "create_private_subnet" {
     count               = "${length(var.priv_sub_cidr)}"
     vpc_id              = aws_vpc.create_vpc.id
     availability_zone   = var.sub_az[count.index]
