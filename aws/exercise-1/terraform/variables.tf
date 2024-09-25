@@ -41,3 +41,11 @@ variable "lab_number" {
 variable "http_cidr" {
 
 }
+
+variable "instance_type" {
+  type = string
+}
+
+variable "ami" {
+  type = string
+}
