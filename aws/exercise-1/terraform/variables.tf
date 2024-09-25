@@ -37,3 +37,7 @@ variable "lab_name" {
 variable "lab_number" {
   type = string
 }
+
+variable "http_cidr" {
+
+}
