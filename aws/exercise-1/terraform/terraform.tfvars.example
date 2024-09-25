@@ -1,0 +1,19 @@
+# For the VPC
+priv_sub_cidr = 
+pub_sub_cidr = 
+region = 
+sub_az = 
+vpc_cidr = 
+
+# For launch templates
+ami = 
+instance_type = 
+
+# For security groups
+http_cidr = 
+
+# For tagging
+lab_name = 
+lab_number = 
+resource_name_prefix = 
+resource_name_suffix = 
